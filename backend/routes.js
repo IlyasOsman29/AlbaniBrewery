@@ -1,3 +1,11 @@
+module.exports = function (app) {
+    
+    // TEST ENDPOINT
+    app.get("/api/test", (req, res) => {
+        res.json({ message: "Backend is connected!" });
+    });
+
+};
 import express from 'express';
 import {fetchBatch, createBatch, deleteBatch, getbatchById} from './database.js';
 
